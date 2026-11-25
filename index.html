@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Producto vectorial en 3D</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Producto vectorial en 3D</h1>
+      <p>Calculadora, procedimiento paso a paso y representación geométrica.</p>
+    </header>
+
+    <section class="panel">
+      <h2>Ingresar vectores</h2>
+      <h3>Vector A</h3>
+      <div class="inputs">
+        <label>Ax <input id="ax" type="number" step="any" value="2"></label>
+        <label>Ay <input id="ay" type="number" step="any" value="1"></label>
+        <label>Az <input id="az" type="number" step="any" value="0"></label>
+      </div>
+      <h3>Vector B</h3>
+      <div class="inputs">
+        <label>Bx <input id="bx" type="number" step="any" value="1"></label>
+        <label>By <input id="by" type="number" step="any" value="2"></label>
+        <label>Bz <input id="bz" type="number" step="any" value="1"></label>
+      </div>
+      <div class="actions">
+        <button id="calculate">Calcular producto vectorial</button>
+        <button id="reset" class="secondary">Restablecer ejemplo</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Procedimiento paso a paso</h2>
+      <div id="result" aria-live="polite">Presiona «Calcular producto vectorial» para ver el procedimiento.</div>
+    </section>
+
+    <section class="panel">
+      <h2>Representación geométrica 3D</h2>
+      <canvas id="scene" width="900" height="560" aria-label="Gráfica geométrica de los vectores"></canvas>
+      <p class="hint">Arrastra dentro de la gráfica para girarla. Usa la rueda del mouse para acercar o alejar.</p>
+      <div class="legend">
+        <span><i class="dot a"></i> Vector A</span>
+        <span><i class="dot b"></i> Vector B</span>
+        <span><i class="dot c"></i> A × B</span>
+        <span><i class="dot plane"></i> Paralelogramo</span>
+      </div>
+    </section>
+
+    <footer>Proyecto académico — Producto vectorial de dos vectores en el espacio</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
